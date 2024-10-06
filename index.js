@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(cors());
 
 const GalleryRoutes = require('./routes/GalleryRoute');
-// const ContactUsRoutes = require('./routes/ContactusRoute.js')
+const ContactUsRoutes = require('./routes/ContactusRoute.js')
 app.use('/api/galleries', GalleryRoutes);
-// app.use('/api/contactus', ContactUsRoutes);
+app.use('/api/contactus', ContactUsRoutes);
 
 app.get("/test", (req, res) => {
     return res.status(200).json({ success: true, message: "Test successful. Server is successfully running!" })

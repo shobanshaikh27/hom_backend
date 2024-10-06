@@ -1,7 +1,7 @@
-// const express = require('express');
-// const router = express.Router();
-// const {emailInquiry} = require("../controllers/ContactUs")
+const express = require('express');
+const router = express.Router();
+const {emailInquiry} = require("../controllers/ContactUs")
 
-// router.post("/",emailInquiry)
+router.post("/",emailInquiry)
 
-// module.exports = router
+module.exports = router
